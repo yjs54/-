@@ -357,10 +357,10 @@
             <c:forEach var="item" items="${catelogGoods}">
                 <div class="card col">
                     <a href="<%=basePath%>goods/goodsId/${item.goods.id}">
-                          <div class="card-image">
+           <%--                <div class="card-image">
                             <img src="<%=basePath%>upload/${item.images[0].imgUrl}" />
                         </div>
-            <%--          <div class="card-content item-price"><c:out value="${item.goods.price}"></c:out></div>  --%>
+                     <div class="card-content item-price"><c:out value="${item.goods.price}"></c:out></div>  --%>
                         <div class="card-content item-name">
                             <p><c:out value="${item.goods.name}"></c:out></p>
                         </div>
@@ -387,10 +387,10 @@
             <c:forEach var="item" items="${catelogGoods1}">
                 <div class="card col">
                     <a href="<%=basePath%>goods/goodsId/${item.goods.id}">
-                             <div class="card-image">
+              <%--               <div class="card-image">
                             <img src="<%=basePath%>upload/${item.images[0].imgUrl}" />
                         </div>
-            <%--          <div class="card-content item-price"><c:out value="${item.goods.price}"></c:out></div>  --%>
+                      <div class="card-content item-price"><c:out value="${item.goods.price}"></c:out></div>  --%>
                         <div class="card-content item-name">
                             <p><c:out value="${item.goods.name}"></c:out></p>
                         </div>
@@ -417,10 +417,10 @@
             <c:forEach var="item" items="${catelogGoods2}">
                 <div class="card col">
                     <a href="<%=basePath%>goods/goodsId/${item.goods.id}">
-                                          <div class="card-image">
+               <%--                           <div class="card-image">
                             <img src="<%=basePath%>upload/${item.images[0].imgUrl}" />
                         </div>
-            <%--          <div class="card-content item-price"><c:out value="${item.goods.price}"></c:out></div>  --%>
+                      <div class="card-content item-price"><c:out value="${item.goods.price}"></c:out></div>  --%>
                         <div class="card-content item-name">
                             <p><c:out value="${item.goods.name}"></c:out></p>
                         </div>
@@ -443,10 +443,10 @@
             <c:forEach var="item" items="${catelogGoods3}">
                 <div class="card col">
                     <a href="<%=basePath%>goods/goodsId/${item.goods.id}">
-                                         <div class="card-image">
+              <%--                           <div class="card-image">
                             <img src="<%=basePath%>upload/${item.images[0].imgUrl}" />
                         </div>
-            <%--          <div class="card-content item-price"><c:out value="${item.goods.price}"></c:out></div>  --%>
+                      <div class="card-content item-price"><c:out value="${item.goods.price}"></c:out></div>  --%>
                         <div class="card-content item-name">
                             <p><c:out value="${item.goods.name}"></c:out></p>
                         </div>
@@ -469,10 +469,10 @@
             <c:forEach var="item" items="${catelogGoods4}">
                 <div class="card col">
                     <a href="<%=basePath%>goods/goodsId/${item.goods.id}">
-                                   <div class="card-image">
+              <%--                     <div class="card-image">
                             <img src="<%=basePath%>upload/${item.images[0].imgUrl}" />
                         </div>
-            <%--          <div class="card-content item-price"><c:out value="${item.goods.price}"></c:out></div>  --%>
+                      <div class="card-content item-price"><c:out value="${item.goods.price}"></c:out></div>  --%>
                         <div class="card-content item-name">
                             <p><c:out value="${item.goods.name}"></c:out></p>
                         </div>
