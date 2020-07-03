@@ -132,13 +132,14 @@
                     <div class="changeinfo">
                         <span>任务类别：</span>
                         <select class="in_info" name="catelogId">
-                            <option value="1">闲置数码</option>
+                            <option value="1">问题求助</option>
                             <option value="2">校园代步</option>
-                            <option value="3">电器日用</option>
-                            <option value="4">图书教材</option>
-                            <option value="5">美妆衣物</option>
+                            <option value="3">票卷收购</option>
+                            <option value="4">专业帮忙</option>
+             <%--                <option value="5">二手市场</option>
                             <option value="6">运动棋牌</option>
                             <option value="7">票券小物</option>
+                            --%>
                         </select>
                     </div>
                     <div class="changeinfo" id="dir">
