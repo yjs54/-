@@ -69,7 +69,7 @@ table td {
 							type="text" name="orderInformation" value="${searchorders.orderInformation}" /> <span>状态：</span>
 						<select name="orderState" id="myselected">
 							<option value="" selected="selected">请选择订单状态</option>
-							<option value="1">待接收</option>
+							<option value="1">待完成</option>
 							<option value="2">进行中</option>
 							<option value="3">已完成</option>
 						</select>
@@ -87,11 +87,12 @@ table td {
 				<thead>
 					<tr>
 						<th><input type="checkbox" id="selectAllButton"></th>
-						<th>订单编号</th>
-						<th>订单信息</th>
-						<th>创建时间</th>
-						<th>订单状态</th>
-						<th>操作</th>
+						<th>任务编号</th>
+						<th>任务描述</th>
+						<th>任务报酬</th>
+						<th>发布时间</th>
+						<th>任务状态</th>
+					<%-- 	<th>操作</th> --%>
 					</tr>
 				</thead>
 				<tbody>
@@ -100,19 +101,20 @@ table td {
 							<td><input type="checkbox" name="itemIds" value="${item.id}"></td>
 							<td>${item.orderNum}</td>
 							<td>${item.orderInformation}</td>
+							<td>￥${item.orderPrice}</td>
 							<td>${item.orderDate}</td>
 							<td><c:if test="${item.orderState == 1}">
-									<span style="color: blue">待接收</span>
+									<span style="color: blue">待完成</span>
 								</c:if> <c:if test="${item.orderState == 2}">
 									<span style="color: red">进行中</span>
 								</c:if> <c:if test="${item.orderState == 3}">
 									<span style="color: orange">已完成</span>
 								</c:if></td>
-							<td>
-								<button type="button" class="btn btn-primary btn-sm"
+							
+					<%-- 			<button type="button" class="btn btn-primary btn-sm"
 									onclick="doView(${item.id})">查看</button>
 								<button type="button" class="btn btn-info btn-sm"
-									onclick="doEdit(${item.id})">修改</button>
+									onclick="doEdit(${item.id})">修改</button> --%>
 						</tr>
 					</c:forEach>
 				</tbody>
@@ -188,9 +190,9 @@ table td {
 							<div class="col-sm-8">
 								<select name="orderState"
 									style="margin-top: 8px; width: 372px; height: 27px;">
-									<option value="1" selected="selected">待发货</option>
-									<option value="2">待收货</option>
-									<option value="3">已完成</option>
+									<option value="1" selected="selected">待完成</option>
+									<option value="2" selected="selected">进行中</option>
+									<option value="3" selected="selected">已完成</option>
 								</select>
 							</div>
 						</div>
