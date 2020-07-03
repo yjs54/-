@@ -134,7 +134,7 @@
                         <select class="in_info" name="catelogId">
                             <option value="1">问题求助</option>
                             <option value="2">校园代步</option>
-                            <option value="3">票卷收购</option>
+                            <option value="3">票券收购</option>
                             <option value="4">专业帮忙</option>
              <%--                <option value="5">二手市场</option>
                             <option value="6">运动棋牌</option>
