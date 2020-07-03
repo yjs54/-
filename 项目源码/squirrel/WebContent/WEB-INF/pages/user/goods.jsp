@@ -64,7 +64,7 @@
                     <a href="<%=basePath%>orders/myOrders">
                         <li class="notice">
                             <div></div>
-                            <span>订单中心</span>
+                            <span>任务中心</span>
                             <strong></strong>
                         </li>
                     </a>
@@ -143,7 +143,7 @@
                                     </div><br>
                                     <div class="like_detail">
                                         <div class="like_content">
-                                            <span>下架时间：${items.goods.endTime}</span>
+                                            <span>取消时间：${items.goods.endTime}</span>
                                         </div>
                                     </div>
                                 </div>
