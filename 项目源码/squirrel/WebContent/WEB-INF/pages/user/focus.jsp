@@ -79,14 +79,14 @@
                     <a href="<%=basePath%>goods/publishGoods">
                         <li class="store">
                             <div></div>
-                            <span>发布物品</span>
+                            <span>发布任务</span>
                             <strong></strong>
                         </li>
                     </a>
                     <a href="<%=basePath%>user/allGoods">
                         <li class="second">
                             <div></div>
-                            <span>我的闲置</span>
+                            <span>未接任务</span>
                             <strong></strong>
                         </li>
                     </a>
