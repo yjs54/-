@@ -91,7 +91,7 @@ table td{
 						<th>ID</th>
 						<th>名称</th>
 						<th>类别</th>
-						<th>价格</th>
+						<th>报酬</th>
 						<th>创建时间</th>
 						<th>状态</th>
 						<th>操作</th>
@@ -105,18 +105,18 @@ table td{
 							<td>${item.name}</td>
 							<td>
 					        <c:if test="${item.catelogId == 1}">  
-							<span> 闲置数码</span>
+							<span>问题求助</span>
 							</c:if>
 							<c:if test="${item.catelogId == 2}">  
 							<span>校园代步 </span>
 							</c:if>
 							<c:if test="${item.catelogId == 3}">  
-							<span> 电器日用  </span>
+							<span>票券收购 </span>
 							</c:if>
 							<c:if test="${item.catelogId == 4}">  
-							<span> 图书教材  </span>
+							<span>专业帮助 </span>
 							</c:if>
-							<c:if test="${item.catelogId == 5}">  
+			<%-- 				<c:if test="${item.catelogId == 5}">  
 							<span>美妆衣物 </span>
 							</c:if>
 							<c:if test="${item.catelogId == 6}">  
@@ -124,7 +124,7 @@ table td{
 							</c:if>
 							<c:if test="${item.catelogId == 7}">  
 							<span> 票券小物</span>
-							</c:if>
+							</c:if> --%>
 							</td>
 							<td>￥${item.realPrice}</td>
 							<td>${item.startTime}</td>
@@ -177,7 +177,7 @@ table td{
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel" >修改商品信息</h4>
+                <h4 class="modal-title" id="myModalLabel" >修改任务信息</h4>
             </div>
             <div class="modal-body" style="height:0 auto; ">
             <form class="form-horizontal" id="myeditform" name="myform">
@@ -194,14 +194,14 @@ table td{
 						<input type="text" class="form-control" id="my_catelogId" readonly name="catelogId" style="margin-top: 8px;"/>
 					</div>
 				</div>
-				<div class="form-group">
+	<%-- 			<div class="form-group">
 					 <label class="col-sm-4 control-label" >原价:</label>
 					<div class="col-sm-8">
 						<input type="text" class="form-control" id="my_price" name="price" style="margin-top: 8px;"/>
 					</div>
-				</div>
+				</div> --%>
 				<div class="form-group">
-					 <label class="col-sm-4 control-label" >售价:</label>
+					 <label class="col-sm-4 control-label" >报酬:</label>
 					<div class="col-sm-8">
 						<input type="text" class="form-control" id="my_realPrice" name="realPrice" style="margin-top: 8px;"/>
 					</div>
@@ -245,7 +245,7 @@ table td{
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel" >查看商品信息</h4>
+                <h4 class="modal-title" id="myModalLabel" >查看任务信息</h4>
             </div>
             <div class="modal-body" style="height:0 auto; ">
             <form class="form-horizontal" id="myviewform" name="myform">
@@ -261,15 +261,15 @@ table td{
 					<div class="col-sm-8">
 						<input type="text" class="form-control" id="my_catelogId" name="catelogId" readonly style="margin-top: 8px;"/>
 					</div>
-				</div>
-				<div class="form-group">
+		<%--		</div>
+		 		<div class="form-group">
 					 <label class="col-sm-4 control-label" >原价:</label>
 					<div class="col-sm-8">
 						<input type="text" class="form-control" id="my_price" name="price" readonly style="margin-top: 8px;"/>
 					</div>
-				</div>
+				</div> --%>
 				<div class="form-group">
-					 <label class="col-sm-4 control-label" >售价:</label>
+					 <label class="col-sm-4 control-label" >报酬:</label>
 					<div class="col-sm-8">
 						<input type="text" class="form-control" id="my_realPrice" name="realPrice" readonly style="margin-top: 8px;"/>
 					</div>
@@ -340,9 +340,9 @@ table td{
 						$('#myviewform').find("input[name='startTime']").val(json.startTime);
 						$('#myviewform').find("textarea[name='describle']").val(json.describle);
 						if(json.status==1){
-							$('#myviewform').find("input[name='status']").val('在售');
+							$('#myviewform').find("input[name='status']").val('未接受');
 						}else{
-							$('#myviewform').find("input[name='status']").val('下架');
+							$('#myviewform').find("input[name='status']").val('已取消');
 						}
 						$('#viewModal').modal('toggle');
 					}
