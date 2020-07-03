@@ -9,7 +9,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>校园校园二手市场</title>
+    <title>佐助互助平台</title>
     <link rel="icon" href="<%=basePath%>img/logo.jpg" type="image/x-icon"/>
     <link rel="stylesheet" href="<%=basePath%>css/index.css" />
     <script type="text/javascript" src="<%=basePath%>js/jquery.js" ></script>
@@ -117,8 +117,8 @@
     <nav class="white nav1">
         <div class="nav-wrapper">
             <a href="<%=basePath%>goods/homeGoods" class="logo">
-                <em class="em1">智慧点点</em>
-                <em class="em2">校园二手市场</em>
+                <em class="em1">佐助</em>
+                <em class="em2">互助平台</em>
                 <em class="em3"></em>
             </a>
             <div class="nav-wrapper search-bar">
@@ -148,7 +148,7 @@
                         </button>
                     </li>
                     <li>
-                        <a href="<%=basePath%>user/allGoods">我发布的商品</a>
+                        <a href="<%=basePath%>user/allGoods">我发布的任务</a>
                     </li>
                     <li>
                         <a>${cur_user.username}</a>
