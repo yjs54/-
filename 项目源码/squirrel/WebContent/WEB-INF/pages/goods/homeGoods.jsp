@@ -347,38 +347,6 @@
     描述：右侧显示部分
 -->
 <div class="main-content">
-    <!--
-
-        描述：右侧banner（图片）部分
-    -->
- <%--    <div class="slider-wapper">
-        <div class="slider" style="height: 440px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
-            <ul class="slides" style="height: 400px;">
-                <li class="active" style="opacity: 1;">
-                    <a href="<%=basePath%>goods/homeGoods">
-                        <div class="bannerimg">
-                         <ul class="bannerul">
-                                <p class="text1">Hello：</p>
-                                <p class="text2">欢迎来到校园二手市场。临近毕业季的</p>
-                                <p class="text3">你，是否有太多的闲置与校友分享，为了追求更好的校园服</p>
-                                <p class="text4">务，我们打造了一个全新的校园平台——<span>校园二手市场</p>
-                                <p class="text5">这里有更多的闲置分享，更自由的校园话题讨论，你想要的，都在这里。</p>
-                                <p class="text6">加入校园二手市场，你的大学，应更精彩。</p>
-                            </ul>
-                            --%>   
-                          <!--   <div class="logoimg">
-                                <img src="../img/p_logo.jpg" />
-                            </div> -->
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <!--
-
-        描述：最新发布
-    -->
     <div class="index-title">
         <a href="">最新发布</a>
         <hr class="hr1">
@@ -517,6 +485,7 @@
             </c:forEach>
         </div>
     </div>
+     </div>   
  <%--    <div class="index-title">
         <a href="">美妆衣物</a>
         <hr class="hr1">
