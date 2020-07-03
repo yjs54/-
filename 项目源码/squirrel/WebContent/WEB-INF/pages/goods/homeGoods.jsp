@@ -351,13 +351,13 @@
 
         描述：右侧banner（图片）部分
     -->
-    <div class="slider-wapper">
+ <%--    <div class="slider-wapper">
         <div class="slider" style="height: 440px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
             <ul class="slides" style="height: 400px;">
                 <li class="active" style="opacity: 1;">
                     <a href="<%=basePath%>goods/homeGoods">
                         <div class="bannerimg">
-     <%--                     <ul class="bannerul">
+                         <ul class="bannerul">
                                 <p class="text1">Hello：</p>
                                 <p class="text2">欢迎来到校园二手市场。临近毕业季的</p>
                                 <p class="text3">你，是否有太多的闲置与校友分享，为了追求更好的校园服</p>
