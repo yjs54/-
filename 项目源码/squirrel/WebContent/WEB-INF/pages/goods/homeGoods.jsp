@@ -335,11 +335,11 @@
             <img src="<%=basePath%>img/smallthing.png"/>
             <em>票券小物</em>
         </a>
-    </li>
+    </li>     -->
     <div class="info">
         <a href="#">关于我们</a><em>-</em>
         <a href="#">联系我们</a>
-        <p>©2020 校园二手市场</p>         -->
+        <p>©2020 校园二手市场</p>         
     </div>
 </div>
 <!--
