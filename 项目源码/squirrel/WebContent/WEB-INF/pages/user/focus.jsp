@@ -64,7 +64,7 @@
                     <a href="<%=basePath%>orders/myOrders">
                         <li class="notice">
                             <div></div>
-                            <span>订单中心</span>
+                            <span>任务中心</span>
                             <strong></strong>
                         </li>
                     </a>
