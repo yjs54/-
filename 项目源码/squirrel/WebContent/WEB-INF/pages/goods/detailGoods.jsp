@@ -314,10 +314,10 @@
               
                <input type="button" value="加入关注" class="blue lighten-1 waves-effect waves-light btn" id="btn_cart" onclick="addFocus(${goodsExtend.goods.id})"></input>
                <c:if test="${cur_user.id==goodsExtend.goods.userId}">
-               <input type="button" value="在线支付" data-toggle="tooltip"  title="不可以购买自己的东西哦~" disabled="disabled" class="blue lighten-1 waves-effect waves-light btn" id="btn_buy"></input>
+               <input type="button" value="接受任务" data-toggle="tooltip"  title="不可以接受自己的任务哦~" disabled="disabled" class="blue lighten-1 waves-effect waves-light btn" id="btn_buy"></input>
                 </c:if>
                 <c:if test="${cur_user.id!=goodsExtend.goods.userId}">
-               <input type="button" value="在线支付"  class="blue lighten-1 waves-effect waves-light btn" id="btn_buy" onclick="toPay(${goodsExtend.goods.id})"></input>
+               <input type="button" value="接受任务"  class="blue lighten-1 waves-effect waves-light btn" id="btn_buy" onclick="toPay(${goodsExtend.goods.id})"></input>
                 </c:if>
                 </div>
                 
