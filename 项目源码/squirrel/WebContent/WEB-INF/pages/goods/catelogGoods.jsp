@@ -273,8 +273,8 @@
     </li> --%>
     <div class="info">
         <a href="" target="_blank">关于我们</a><em>-</em>
-        <a href="">联系我们</a>
-        <p>@2020 校园二手市场</p>
+        <a href="" target="_blank">联系我们</a>
+        <p>@2020 佐助互助平台</p>
     </div>
 </div>   
 <!--
