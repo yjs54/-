@@ -9,7 +9,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>校园二手市场</title>
+    <title>佐助互助平台</title>
     <link rel="icon" href="<%=basePath%>img/logo.jpg" type="image/x-icon"/>
     <link rel="stylesheet" href="<%=basePath%>css/index.css" />
     <script type="text/javascript" src="<%=basePath%>js/jquery.js" ></script>
@@ -55,8 +55,8 @@
     <nav class="white nav1">
         <div class="nav-wrapper">
             <a href="<%=basePath%>goods/homeGoods" class="logo">
-                <em class="em1">智慧点点</em>
-                <em class="em2">校园二手市场</em>
+                <em class="em1">佐助</em>
+                <em class="em2">互助平台</em>
                 <em class="em3"></em>
             </a>
             <div class="nav-wrapper search-bar">
@@ -86,7 +86,7 @@
                         </button>
                     </li>
                     <li>
-                        <a href="<%=basePath%>user/allGoods">我发布的商品</a>
+                        <a href="<%=basePath%>user/allGoods">我发布的任务</a>
                     </li>
                     <li>
                         <a>${cur_user.username}</a>
@@ -232,7 +232,7 @@
     <li ng-class="{true: 'active'}[isDigital]">
         <a href="<%=basePath%>goods/catelog/1" class="digital">
             <img src="<%=basePath%>img/digital.png"  />
-            <em>闲置数码</em>
+            <em>问题求助</em>
         </a>
     </li>
     <li ng-class="{true: 'active'}[isRide]">
@@ -244,16 +244,16 @@
     <li ng-class="{true: 'active'}[isCommodity]">
         <a href="<%=basePath%>goods/catelog/3" class="commodity">
             <img src="<%=basePath%>img/commodity.png"/>
-            <em>电器日用</em>
+            <em>票券收购</em>
         </a>
     </li>
     <li ng-class="{true: 'active'}[isBook]">
         <a href="<%=basePath%>goods/catelog/4" class="book">
             <img src="<%=basePath%>img/book.png"/>
-            <em>图书教材</em>
+            <em>专业帮忙</em>
         </a>
     </li>
-    <li ng-class="{true: 'active'}[isMakeup]">
+ <%--    <li ng-class="{true: 'active'}[isMakeup]">
         <a href="<%=basePath%>goods/catelog/5" class="makeup">
             <img src="<%=basePath%>img/makeup.png"/>
             <em>美妆衣物</em>
@@ -276,7 +276,7 @@
         <a href="">联系我们</a>
         <p>@2020 校园二手市场</p>
     </div>
-</div>
+</div>   --%>
 <!--
 
     描述：右侧显示部分
@@ -305,7 +305,7 @@
                             <p><c:out value="${item.goods.name}"></c:out></p>
                         </div>
                         <div class="card-content item-location">
-                            <p>南京大学</p>
+                            <p>中国石油大学</p>
                             <p><c:out value="${item.goods.startTime}"></c:out></p>
                         </div>
                     </a>
