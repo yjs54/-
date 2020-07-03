@@ -397,7 +397,7 @@
                             <p><c:out value="${item.goods.name}"></c:out></p>
                         </div>
                         <div class="card-content item-location">
-                            <p>智慧点点</p>
+                            <p>中国石油大学</p>
                             <p><c:out value="${item.goods.startTime}"></c:out></p>
                         </div>
                     </a>
