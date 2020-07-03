@@ -26,16 +26,16 @@
 				</ul>
 			</li>
 			<li class="submenu"><a href="#"><i class="icon icon-signal"></i>
-					<span>商品管理</span> </a>
+					<span>任务管理</span> </a>
 				<ul>
-					<li><a href="<%=basePath%>admin/goodsList?pageNum=1">商品列表</a></li>
+					<li><a href="<%=basePath%>admin/goodsList?pageNum=1">任务列表</a></li>
 					<%-- <li><a href="<c:url value="/back/agent/addForm"/>">添加商品</a></li> --%>
 				</ul>
 			</li>
 			<li class="submenu"><a href="#"><i class="icon icon-th"></i>
-					<span>订单管理</span> </a>
+					<span>统计任务</span> </a>
 				<ul>
-					<li><a href="<%=basePath%>admin/ordersList?pageNum=1">订单列表</a></li>
+					<li><a href="<%=basePath%>admin/ordersList?pageNum=1">统计列表</a></li>
 					<%-- <li><a href="<c:url value="/back/house/addForm"/>">添加订单</a></li> --%>
 				</ul>
 			</li>
