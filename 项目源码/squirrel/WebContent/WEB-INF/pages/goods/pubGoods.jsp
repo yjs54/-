@@ -39,7 +39,7 @@
                 <h1 class="logo"></h1>
             </a>
             <a href="<%=basePath%>user/home">
-                 <img src="<%=basePath%>img/home_header.png"  style="margin-left: 20px;" >
+                 <img src="<%=basePath%>img/headbanner.png"  style="margin-left: 20px;" >
             </a>
             <a href="<%=basePath%>user/home">
                 <div class="home"></div>
