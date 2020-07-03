@@ -9,7 +9,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>我的闲置</title>
+    <title>未接任务</title>
     <link rel="icon" href="<%=basePath%>img/logo.jpg" type="image/x-icon"/>
     <link rel="stylesheet" href="<%=basePath%>css/font-awesome.min.css" />
     <link rel="stylesheet" href="<%=basePath%>css/emoji.css" />
@@ -78,14 +78,14 @@
                     <a href="<%=basePath%>goods/publishGoods">
                         <li class="store">
                             <div></div>
-                            <span>发布物品</span>
+                            <span>发布任务</span>
                             <strong></strong>
                         </li>
                     </a>
                     <a href="<%=basePath%>user/allGoods">
                         <li class="second">
                             <div></div>
-                            <span>我的闲置</span>
+                            <span>未接任务</span>
                             <strong></strong>
                         </li>
                     </a>
@@ -109,7 +109,7 @@
 
                     描述：闲置商品展示
                 -->
-                <h1 style="text-align: center">我的闲置</h1>
+                <h1 style="text-align: center">未接任务</h1>
 					<hr />
                 <div class="share_content">
                     <c:if test="${empty goodsAndImage}">
