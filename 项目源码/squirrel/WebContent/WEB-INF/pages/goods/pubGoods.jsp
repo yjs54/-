@@ -91,7 +91,7 @@
                     <a href="<%=basePath%>user/allGoods">
                         <li class="second">
                             <div></div>
-                            <span>我的闲置</span>
+                            <span>未接任务</span>
                             <strong></strong>
                         </li>
                     </a>
