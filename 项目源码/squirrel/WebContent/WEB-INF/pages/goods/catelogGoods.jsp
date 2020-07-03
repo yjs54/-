@@ -253,7 +253,7 @@
             <em>专业帮忙</em>
         </a>
     </li>
- <%--    <li ng-class="{true: 'active'}[isMakeup]">
+<%--    <li ng-class="{true: 'active'}[isMakeup]">
         <a href="<%=basePath%>goods/catelog/5" class="makeup">
             <img src="<%=basePath%>img/makeup.png"/>
             <em>美妆衣物</em>
@@ -270,13 +270,13 @@
             <img src="<%=basePath%>img/smallthing.png"/>
             <em>票券小物</em>
         </a>
-    </li>
+    </li> --%>
     <div class="info">
         <a href="" target="_blank">关于我们</a><em>-</em>
         <a href="">联系我们</a>
         <p>@2020 校园二手市场</p>
     </div>
-</div>   --%>
+</div>   
 <!--
 
     描述：右侧显示部分
@@ -305,7 +305,7 @@
                             <p><c:out value="${item.goods.name}"></c:out></p>
                         </div>
                         <div class="card-content item-location">
-                            <p>中国石油大学</p>
+                            <p>南京大学</p>
                             <p><c:out value="${item.goods.startTime}"></c:out></p>
                         </div>
                     </a>
