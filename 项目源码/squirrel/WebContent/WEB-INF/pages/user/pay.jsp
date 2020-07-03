@@ -76,10 +76,10 @@
 					</div>
 					<span class="name">${cur_user.username}</span>
 					<hr>
-					<!--   <span class="school">莆田学院</span> -->
-				   <a class="btn" style="width: 98%;background-color: rgb(79, 190, 246);color:rgba(255, 255, 255, 1);" href="<%=basePath%>user/myPurse">我的钱包：￥${myPurse.balance}</a>
+					<!--   <span class="school">中国石油大学</span> -->
+		<%-- 		   <a class="btn" style="width: 98%;background-color: rgb(79, 190, 246);color:rgba(255, 255, 255, 1);" href="<%=basePath%>user/myPurse">我的钱包：￥${myPurse.balance}</a>
                 <input type="hidden" value="${myPurse.recharge}" id="recharge"/>
-                <input type="hidden" value="${myPurse.withdrawals}" id="withdrawals"/>
+                <input type="hidden" value="${myPurse.withdrawals}" id="withdrawals"/> --%>
                <span class="btn" data-toggle="modal" data-target="#myModal"style="width: 98%; background-color: rgb(79, 190, 246); color: rgba(255, 255, 255, 1); margin-top: 0.5cm;">我的信用积分：${cur_user.power}</span>
 
 				</div>
@@ -97,12 +97,12 @@
 						</a>
 						<a href="<%=basePath%>goods/publishGoods">
 							<li class="store">
-								<div></div> <span>发布物品</span> <strong></strong>
+								<div></div> <span>发布任务</span> <strong></strong>
 						</li>
 						</a>
 						<a href="<%=basePath%>user/allGoods">
 							<li class="second">
-								<div></div> <span>我的闲置</span> <strong></strong>
+								<div></div> <span>未接任务</span> <strong></strong>
 						</li>
 						</a>
 						<a href="<%=basePath%>user/basic">
@@ -132,18 +132,18 @@
 							<form class="form-horizontal" role="form" action="<%=basePath%>orders/addOrders" >
 							<h4 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;订单编号： <input name="orderNum" class="order-num" type="text" style="border:0px;background:rgba(0, 0, 0, 0);" value=""/>  <input name="goodsId" type="hidden" value="${goodsExtend.goods.id}"/> </h4>
 								<div class="form-group">
-									<label for="firstname" class="col-sm-2 control-label">图片:</label>
-									<div class="col-sm-10">
+		<%--							<label for="firstname" class="col-sm-2 control-label">图片:</label>
+					 				<div class="col-sm-10">
                 							<img style="height:150px;weight:150px;" src="<%=basePath%>upload/${goodsExtend.images[0].imgUrl}" />
-									</div>
+									</div>  --%>
 									<label for="firstname" class="col-sm-2 control-label">名称：</label>
 									<div class="col-sm-10">
 										<input type="text" class="form-control" disabled="disabled" style="border:0px;background:rgba(0, 0, 0, 0); " value="${goodsExtend.goods.name}" >
 									</div>
-									<label for="firstname" class="col-sm-2 control-label">价格：</label>
+						<%-- 			<label for="firstname" class="col-sm-2 control-label">价格：</label>
 									<div class="col-sm-10">
 										<input name="orderPrice" type="text" class="form-control" style="border:0px;background:rgba(0, 0, 0, 0); " value="${goodsExtend.goods.price}">
-									</div>
+									</div>  --%>
 									<label for="firstname" class="col-sm-2 control-label" >备注：</label>
 									<div class="col-sm-10">
 										<input type="text" class="form-control" 
@@ -153,7 +153,7 @@
 								<hr />
 								<div class="form-group">
 									<div class="col-sm-offset-4 col-sm-8">
-									    <a href="<%=basePath%>goods/goodsId/${goodsExtend.goods.id}" class="btn btn-danger">取消支付</a>
+									    <a href="<%=basePath%>goods/goodsId/${goodsExtend.goods.id}" class="btn btn-danger">取消接受</a>
 										<c:if test="${myPurse.balance >= goodsExtend.goods.price}"><button type="submit" class="btn btn-info">立即支付</button></c:if>
 										<c:if test="${myPurse.balance < goodsExtend.goods.price}"><button disabled="disabled" class="btn btn-danger">余额不足，请充值！</button></c:if>
 										
