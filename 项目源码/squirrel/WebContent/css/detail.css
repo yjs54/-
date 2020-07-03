@@ -10603,7 +10603,7 @@ div.login.stark-components .publish-box>.row {
 }
 
 div.login.stark-components .publish-box .title {
-	background: url(../img/title.png);
+	background: url(../img/headtitle.png);
 	background-size: contain;
 	height: 100px
 }
@@ -10667,7 +10667,7 @@ div.signup.stark-components .publish-box>.row {
 }
 
 div.signup.stark-components .publish-box .title {
-	background: url(../img/title.png);
+	background: url(../img/headtitle.png);
 	background-size: contain;
 	height: 100px
 }
@@ -10744,7 +10744,7 @@ div.alert.stark-components .publish-box .title, div.notice.stark-components .pub
 div.alert.stark-components .publish-box .logo, div.notice.stark-components .publish-box .logo
 	{
 	height: 80px;
-	background: url(/static//img/title.png);
+	background: url(/static//img/headtitle.png);
 	background-size: cover
 }
 
