@@ -25,7 +25,7 @@ table td{
 
 
 </style>
-<title>商品列表</title>
+<title>任务列表</title>
 	<!-- 分页 -->
 <link href="<%=basePath%>css/mypage.css" rel="stylesheet">
 
@@ -45,8 +45,8 @@ table td{
 		<div id="content-header">
 			<div id="breadcrumb">
 				<a href="<%=basePath%>admin/indexs" title="主页"
-					class="tip-bottom"><i class="icon-home"></i>主页</a> <a title="商品列表"
-					class="tip-bottom">商品列表</a>
+					class="tip-bottom"><i class="icon-home"></i>主页</a> <a title="任务列表"
+					class="tip-bottom">任务列表</a>
 			</div>
 		</div>
 		<!--End-breadcrumbs-->
@@ -58,14 +58,14 @@ table td{
 			<div class="col-lg-12">
 				<h2 class="page-header"
 					style="margin-top:10px;text-align: center; font-family: '微软雅黑', Verdana, sans-serif, '宋体', serif;">
-					商品列表显示</h2>
+					任务列表显示</h2>
 			</div>
 
 			<!--搜索栏-->
 			 <form class="form-horizontal" id="myserchform" name="myform" action="<%=basePath%>admin/searchGoods" method="post">
 				<div class="form-group">
 				<div  class="col-sm-8" style="text-align:center;">
-					<span >商品ID：</span>
+					<span >任务ID：</span>
 					<input type="number" placeholder="请输入纯数字~" name="id" value="${searchgoods.id}"/>
 					<span >名称：</span>
 					<input type="text"  name="name" value="${searchgoods.name}"/>
