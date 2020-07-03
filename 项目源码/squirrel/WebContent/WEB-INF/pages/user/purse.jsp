@@ -131,10 +131,10 @@
 								<hr />
 								<div class="form-group">
 									<div class="col-sm-offset-4 col-sm-8">
-									  <%--   <a href="<%=basePath%>goods/goodsId/${goodsExtend.goods.id}" class="btn btn-danger">取消支付</a>
+									    <a href="<%=basePath%>goods/goodsId/${goodsExtend.goods.id}" class="btn btn-danger">取消支付</a>
 										<c:if test="${cur_user.money >= goodsExtend.goods.price}"><button type="submit" class="btn btn-info">立即支付</button></c:if>
 										<c:if test="${cur_user.money < goodsExtend.goods.price}"><button disabled="disabled" class="btn btn-danger">余额不足，请充值！</button></c:if>
-										 --%>
+										 
 										 <c:if test="${myPurse.state==null}">
 										 <a  onclick="upAnddown(1)" class="btn btn-danger">立即充值</a>
 										 <a  onclick="upAnddown(2)" class="btn btn-danger">立即提现</a>
