@@ -30,7 +30,7 @@
                 <h1 class="logo"></h1>
             </a>
             <a href="<%=basePath%>goods/homeGoods">
-                 <img src="<%=basePath%>img/home_header.png"  style="margin-left: 20px;" >
+                 <img src="<%=basePath%>img/headbanner.png"  style="margin-left: 20px;" >
             </a>
             <a href="<%=basePath%>user/home">
                 <div class="home"></div>
@@ -51,8 +51,8 @@
                 <span class="name">${cur_user.username}</span><hr>
               <!--   <span class="school">南京大学</span> -->
                   <a class="btn" style="width: 98%;background-color: rgb(79, 190, 246);color:rgba(255, 255, 255, 1);" href="<%=basePath%>user/myPurse">我的钱包：￥${myPurse.balance}</a>
-                <input type="hidden" value="${myPurse.recharge}" id="recharge"/>
-                <input type="hidden" value="${myPurse.withdrawals}" id="withdrawals"/>
+        <%--         <input type="hidden" value="${myPurse.recharge}" id="recharge"/> 
+                <input type="hidden" value="${myPurse.withdrawals}" id="withdrawals"/>  --%>
                 <span class="btn" data-toggle="modal" data-target="#myModal" style="width: 98%;background-color: rgb(79, 190, 246); color:rgba(255, 255, 255, 1);margin-top:0.5cm;">我的信用积分：${cur_user.power}</span>
                 
             </div>
