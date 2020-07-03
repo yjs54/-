@@ -39,13 +39,13 @@
 					<%-- <li><a href="<c:url value="/back/house/addForm"/>">添加订单</a></li> --%>
 				</ul>
 			</li>
-			<li class="submenu"><a href="#"><i class="icon icon-inbox"></i>
+	<%-- 	<li class="submenu"><a href="#"><i class="icon icon-inbox"></i>
 					<span>钱包管理</span> </a>
 				<ul>
 					<li><a href="<%=basePath%>admin/purseList?pageNum=1">钱包列表</a></li>
-					<%-- <li><a href="<%=basePath%>admin/purseList?pageNum=1">审核管理</a></li> --%>
+					 <li><a href="<%=basePath%>admin/purseList?pageNum=1">审核管理</a></li> 
 				</ul>
-			</li>
+			</li> --%>	
 			<li class="submenu"><a href="#"><i class="icon icon-fullscreen"></i>
 					<span>系统设置</span> </a>
 				<ul>
