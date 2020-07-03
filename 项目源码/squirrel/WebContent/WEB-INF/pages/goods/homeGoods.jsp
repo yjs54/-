@@ -297,7 +297,7 @@
     <li ng-class="{true: 'active'}[isDigital]">
         <a href="<%=basePath%>goods/catelog/1" class="digital">
             <img src="<%=basePath%>img/digital.png"  />
-            <em>闲置数码</em>
+            <em>问题求助</em>
         </a>
     </li>
     <li ng-class="{true: 'active'}[isRide]">
@@ -309,16 +309,16 @@
     <li ng-class="{true: 'active'}[isCommodity]">
         <a href="<%=basePath%>goods/catelog/3" class="commodity">
             <img src="<%=basePath%>img/commodity.png"/>
-            <em>电器日用</em>
+            <em>票券收购</em>
         </a>
     </li>
     <li ng-class="{true: 'active'}[isBook]">
         <a href="<%=basePath%>goods/catelog/4" class="book">
             <img src="<%=basePath%>img/book.png"/>
-            <em>图书教材</em>
+            <em>专业帮忙</em>
         </a>
     </li>
-    <li ng-class="{true: 'active'}[isMakeup]">
+ <!--     <li ng-class="{true: 'active'}[isMakeup]">
         <a href="<%=basePath%>goods/catelog/5" class="makeup">
             <img src="<%=basePath%>img/makeup.png"/>
             <em>美妆衣物</em>
@@ -339,7 +339,7 @@
     <div class="info">
         <a href="#">关于我们</a><em>-</em>
         <a href="#">联系我们</a>
-        <p>©2020 校园二手市场</p>
+        <p>©2020 校园二手市场</p>         -->
     </div>
 </div>
 <!--
@@ -357,7 +357,7 @@
                 <li class="active" style="opacity: 1;">
                     <a href="<%=basePath%>goods/homeGoods">
                         <div class="bannerimg">
-                            <ul class="bannerul">
+     <%--                     <ul class="bannerul">
                                 <p class="text1">Hello：</p>
                                 <p class="text2">欢迎来到校园二手市场。临近毕业季的</p>
                                 <p class="text3">你，是否有太多的闲置与校友分享，为了追求更好的校园服</p>
@@ -365,6 +365,7 @@
                                 <p class="text5">这里有更多的闲置分享，更自由的校园话题讨论，你想要的，都在这里。</p>
                                 <p class="text6">加入校园二手市场，你的大学，应更精彩。</p>
                             </ul>
+                            --%>   
                           <!--   <div class="logoimg">
                                 <img src="../img/p_logo.jpg" />
                             </div> -->
