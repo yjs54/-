@@ -154,8 +154,8 @@
 								<div class="form-group">
 									<div class="col-sm-offset-4 col-sm-8">
 									    <a href="<%=basePath%>goods/goodsId/${goodsExtend.goods.id}" class="btn btn-danger">取消接受</a>
-										<c:if test="${myPurse.balance >= goodsExtend.goods.price}"><button type="submit" class="btn btn-info">立即支付</button></c:if>
-										<c:if test="${myPurse.balance < goodsExtend.goods.price}"><button disabled="disabled" class="btn btn-danger">余额不足，请充值！</button></c:if>
+										<button type="submit" class="btn btn-info">立即接受</button>
+										
 										
 									</div>
 								</div>
