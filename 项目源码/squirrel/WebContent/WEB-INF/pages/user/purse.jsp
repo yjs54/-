@@ -224,7 +224,7 @@ $(".btn_mypurse").on('click',function(){
 						location.reload();
 					}
 		}
-	});
+	;
 </script>
 <script type="text/javascript">
 
