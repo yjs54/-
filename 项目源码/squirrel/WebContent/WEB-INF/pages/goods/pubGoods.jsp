@@ -253,7 +253,7 @@
         allowedPreviewMimeTypes : [ 'jpg', 'png', 'gif' ],//控制被预览的所有mime类型
         language : 'zh'
     })
-<%--    //异步上传返回结果处理
+    //异步上传返回结果处理
     $('.myfile').on('fileerror', function(event, data, msg) {
         console.log("fileerror");
         console.log(data);
@@ -275,7 +275,7 @@
     $(".myfile").on("filebatchuploadsuccess", function (event, data, previewId, index) {
         console.log("filebatchuploadsuccess");
         console.log(data);
-    });--%>
+    });
 
     //上传前
     $('.myfile').on('filepreupload', function(event, data, previewId, index) {
