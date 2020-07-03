@@ -28,13 +28,13 @@
 	
 		location.href ='<%=basePath%>orders/deliver/'+orderNum
 	
-		alert("发货成功，请送货给对方，并等待确认收货~")
+		alert("任务已交付，已发起结束通知")
 	}
 		
 		function ordersReceipt(orderNum,orderPrice,goodsId){
 			location.href ='<%=basePath%>orders/receipt?orderNum='+orderNum+'&orderPrice='+orderPrice+'&goodsId='+goodsId;  
 			
-			alert("收货成功，感谢您的信任~")
+			alert("任务结束，感谢您的信任~")
 		}
 	
 
@@ -176,7 +176,7 @@
 														<tr>
 														  <th >任务编号</th>
 															<th>名称</th>
-															<th>价格</th>
+															<th>报酬</th>
 															<th>备注</th>
 															<th>操作</th>
 														</tr>
@@ -190,7 +190,7 @@
 															<td>${items.orderInformation}</td>
 															<td>
 															<c:if test="${items.orderState==1}"><input type="button" value="待完成" class="btn btn-info"/></c:if>
-															<c:if test="${items.orderState==2}"><input type="button" value="收&nbsp&nbsp&nbsp&nbsp货" onclick="ordersReceipt(${items.orderNum},${items.orderPrice},${items.goods.id})" class="btn btn-info"/></c:if>
+															<c:if test="${items.orderState==2}"><input type="button" value="完  成" onclick="ordersReceipt(${items.orderNum},${items.orderPrice},${items.goods.id})" class="btn btn-info"/></c:if>
 															<c:if test="${items.orderState==3}"><input type="button" value="已完成" class="btn btn-info"/></c:if>
 															</td>
 														</tr>
@@ -214,7 +214,7 @@
 														<tr class="text-center">
 														  <th>任务编号</th>
 															<th>名称</th>
-															<th>价格</th>
+															<th>报酬</th>
 															<th>备注</th>
 															<th>操作</th>
 														</tr>
@@ -230,7 +230,7 @@
 															<td>${items.orderInformation}</td>
 															<td>
 															
-															<c:if test="${items.orderState==1}"><input type="button" value="发&nbsp&nbsp&nbsp&nbsp货" onclick="ordersDeliver(${items.orderNum})" class="btn btn-info"/></c:if>
+															<c:if test="${items.orderState==1}"><input type="button" value="结  束" onclick="ordersDeliver(${items.orderNum})" class="btn btn-info"/></c:if>
 															<c:if test="${items.orderState==2}"><input type="button" value="待结束"  class="btn btn-info"/></c:if>
 															<c:if test="${items.orderState==3}"><input type="button" value="已完成" class="btn btn-info"/></c:if>
 															
