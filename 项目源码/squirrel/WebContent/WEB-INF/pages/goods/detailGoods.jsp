@@ -9,7 +9,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>智慧点点校园二手市场</title>
+    <title>佐助互助平台</title>
     <link rel="icon" href="<%=basePath%>img/logo.jpg" type="image/x-icon"/>
     <link rel="stylesheet" href="<%=basePath%>css/index.css" />
     <script type="text/javascript" src="<%=basePath%>js/jquery.js" ></script>
@@ -72,8 +72,8 @@
     <nav class="white nav1">
         <div class="nav-wrapper">
             <a href="<%=basePath%>goods/homeGoods" class="logo">
-                <em class="em1">智慧点点</em>
-                <em class="em2">校园二手市场</em>
+                <em class="em1">佐助</em>
+                <em class="em2">互助平台</em>
                 <em class="em3"></em>
             </a>
             <div class="nav-wrapper search-bar">
@@ -106,7 +106,7 @@
                         </button>
                     </li>
                     <li>
-                        <a href="<%=basePath%>user/allGoods">我发布的商品</a>
+                        <a href="<%=basePath%>user/allGoods">我发布的任务</a>
                     </li>
                     <li>
                         <a>${cur_user.username}</a>
@@ -247,7 +247,7 @@
         <em>></em>
         <a>${goodsExtend.goods.name}</a>
     </div>
-    <div class="col s6">
+<%--    <div class="col s6">
         <div class="slider" style="height: 440px;">
             <ul class="slides" style="height: 400px;">
                 <img src="<%=basePath%>upload/${goodsExtend.images[0].imgUrl}" />
@@ -259,10 +259,10 @@
                 <li class="indicator-item"></li>
             </ul>
         </div>
-    </div>
+    </div> 
     <div class="col s6">
         <h1 class="item-name">${goodsExtend.goods.name}</h1>
-        <h2 class="item-price">${goodsExtend.goods.price}</h2>
+        <h2 class="item-price">${goodsExtend.goods.price}</h2> 
         <h2 class="publisher-info-title">原价：<span style="text-decoration:line-through;">${goodsExtend.goods.realPrice}</span></h2>
         <div class="item-public-info">
             <p class="bargain">可讲价</p>
@@ -270,7 +270,7 @@
                 <i class="iconfont"></i>
                 <em class="item-location">南京大学</em>
             </p>
-        </div>
+        </div>  --%> 
         <div class="publisher-info-title">
             <em>卖家信息</em><hr>
         </div>
@@ -327,13 +327,13 @@
     </div>
 </div>
 <div class="detail-box stark-components z-depth-1 row">
-    <h1 class="title">商品描述</h1>
+    <h1 class="title">任务描述</h1>
     <hr class="hr1" />
     <hr class="hr2" />
     <p class="section">描述：${goodsExtend.goods.describle}</p>
     <p class="section"></p>
     <p class="section">
-        联系我的时候，请说明是在“智慧点点校园二手市场”上看见的哦~
+        联系我的时候，请说明是在“佐助互助平台”上看见的
     </p>
 </div>
 <div class="row detail-area">
