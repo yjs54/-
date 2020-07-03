@@ -11,7 +11,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>确认订单</title>
+<title>确认任务</title>
 <link rel="icon" href="<%=basePath%>img/logo.jpg" type="image/x-icon" />
 <link rel="stylesheet" href="<%=basePath%>css/font-awesome.min.css" />
 <link rel="stylesheet" href="<%=basePath%>css/userhome.css" />
@@ -125,12 +125,12 @@
 
                     描述：关注商品展示
                 -->
-					<h1 style="text-align: center">确认订单</h1>
+					<h1 style="text-align: center">确认任务</h1>
 					<hr />
 					<div class="share_content">
 						<div class="story">
 							<form class="form-horizontal" role="form" action="<%=basePath%>orders/addOrders" >
-							<h4 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;订单编号： <input name="orderNum" class="order-num" type="text" style="border:0px;background:rgba(0, 0, 0, 0);" value=""/>  <input name="goodsId" type="hidden" value="${goodsExtend.goods.id}"/> </h4>
+							<h4 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;任务编号： <input name="orderNum" class="order-num" type="text" style="border:0px;background:rgba(0, 0, 0, 0);" value=""/>  <input name="goodsId" type="hidden" value="${goodsExtend.goods.id}"/> </h4>
 								<div class="form-group">
 		<%--							<label for="firstname" class="col-sm-2 control-label">图片:</label>
 					 				<div class="col-sm-10">
