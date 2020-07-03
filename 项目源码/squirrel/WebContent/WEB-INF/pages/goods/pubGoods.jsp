@@ -9,7 +9,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>发布商品</title>
+    <title>发布任务</title>
     <link rel="icon" href="<%=basePath%>img/logo.jpg" type="image/x-icon"/>
     <link rel="stylesheet" href="<%=basePath%>css/font-awesome.min.css" />
     <link rel="stylesheet" href="<%=basePath%>css/userhome.css" />
@@ -84,7 +84,7 @@
                     <a href="<%=basePath%>goods/publishGoods">
                         <li class="store">
                             <div></div>
-                            <span>发布物品</span>
+                            <span>发布任务</span>
                             <strong></strong>
                         </li>
                     </a>
@@ -112,24 +112,25 @@
         <div id="user_content">
             <div class="basic">
                 <form:form action="../goods/publishGoodsSubmit" method="post" role="form" enctype="multipart/form-data">
-                    <h1 style="margin-left: 210px;">发布物品</h1><hr />
+                    <h1 style="margin-left: 210px;">发布任务</h1><hr />
                     <div class="changeinfo">
-                        <span>物品名：</span>
+                        <span>任务名：</span>
                         <input class="in_info" type="text" name="name" placeholder="请输入物品名"/>
                         <span>(*必填)</span>
                     </div>
                     <div class="changeinfo">
-                        <span>出售价格：</span>
+                        <span>报酬：</span>
                         <input class="in_info" type="text" name="price" placeholder="请输入出售价格"/>
                         <span>(*必填)</span>
                     </div>
-                    <div class="changeinfo">
+            <%--        <div class="changeinfo">
                         <span>原价：</span>
                         <input class="in_info" type="text" name="realPrice" placeholder="请输入商品原价"/>
                         <span id="checkphone">(*选填,请如实填写)</span>
-                    </div>
+                    </div>    
+                        --%> 
                     <div class="changeinfo">
-                        <span>物品类别：</span>
+                        <span>任务类别：</span>
                         <select class="in_info" name="catelogId">
                             <option value="1">闲置数码</option>
                             <option value="2">校园代步</option>
@@ -141,7 +142,7 @@
                         </select>
                     </div>
                     <div class="changeinfo" id="dir">
-                        <span>商品描述：</span>
+                        <span>任务描述：</span>
                         <div class="sha">
                             <div class="publ">
                                 <div class="pub_con">
@@ -154,7 +155,7 @@
                     </div>
                     <br />
                     <hr />
-                    <div class="changeinfo">
+           <%--         <div class="changeinfo">
                         <span>商品图片：</span>
                         <div class="container">
                             <div class="row">
@@ -169,6 +170,7 @@
                             </div>
                         </div>
                     </div>
+                    --%> 
                     <input type="submit" class="setting-save" value="发布物品" style="margin-top: 20px;background-color: blue;"/>
                 </form:form>
             </div>
