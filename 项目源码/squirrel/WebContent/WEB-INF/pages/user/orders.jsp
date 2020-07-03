@@ -11,7 +11,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>订单中心</title>
+<title>任务中心</title>
 <link rel="icon" href="<%=basePath%>img/logo.jpg" type="image/x-icon" />
 <link rel="stylesheet" href="<%=basePath%>css/font-awesome.min.css" />
 <link rel="stylesheet" href="<%=basePath%>css/userhome.css" />
@@ -83,7 +83,7 @@
                     <a href="<%=basePath%>orders/myOrders">
                         <li class="notice">
                             <div></div>
-                            <span>订单中心</span>
+                            <span>任务中心</span>
                             <strong></strong>
                         </li>
                     </a>
@@ -147,9 +147,9 @@
 									<!-- <li class="nav-item"><a class="nav-link active"
 										data-toggle="tab" href="#home">全部订单</a></li> -->
 									<li class="nav-item"><a class="nav-link active" data-toggle="tab"
-										href="#orders_my" >我买的</a></li>
+										href="#orders_my" >已接受</a></li>
 									<li class="nav-item" ><a class="nav-link" data-toggle="tab"
-										href="#orders_other" >我卖的</a></li>
+										href="#orders_other" >已发布</a></li>
 								</ul>
 
 								<!-- Tab panes -->
@@ -174,7 +174,7 @@
 													<tr>
 													</tr>
 														<tr>
-														  <th >订单编号</th>
+														  <th >任务编号</th>
 															<th>名称</th>
 															<th>价格</th>
 															<th>备注</th>
@@ -189,7 +189,7 @@
 															<td>${items.goods.price}</td>
 															<td>${items.orderInformation}</td>
 															<td>
-															<c:if test="${items.orderState==1}"><input type="button" value="待发货" class="btn btn-info"/></c:if>
+															<c:if test="${items.orderState==1}"><input type="button" value="待完成" class="btn btn-info"/></c:if>
 															<c:if test="${items.orderState==2}"><input type="button" value="收&nbsp&nbsp&nbsp&nbsp货" onclick="ordersReceipt(${items.orderNum},${items.orderPrice},${items.goods.id})" class="btn btn-info"/></c:if>
 															<c:if test="${items.orderState==3}"><input type="button" value="已完成" class="btn btn-info"/></c:if>
 															</td>
@@ -212,7 +212,7 @@
 													<tr>
 													</tr>
 														<tr class="text-center">
-														  <th>订单编号</th>
+														  <th>任务编号</th>
 															<th>名称</th>
 															<th>价格</th>
 															<th>备注</th>
@@ -231,7 +231,7 @@
 															<td>
 															
 															<c:if test="${items.orderState==1}"><input type="button" value="发&nbsp&nbsp&nbsp&nbsp货" onclick="ordersDeliver(${items.orderNum})" class="btn btn-info"/></c:if>
-															<c:if test="${items.orderState==2}"><input type="button" value="待收货"  class="btn btn-info"/></c:if>
+															<c:if test="${items.orderState==2}"><input type="button" value="待结束"  class="btn btn-info"/></c:if>
 															<c:if test="${items.orderState==3}"><input type="button" value="已完成" class="btn btn-info"/></c:if>
 															
 															
