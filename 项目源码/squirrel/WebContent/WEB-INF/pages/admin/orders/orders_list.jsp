@@ -69,8 +69,8 @@ table td {
 							type="text" name="orderInformation" value="${searchorders.orderInformation}" /> <span>状态：</span>
 						<select name="orderState" id="myselected">
 							<option value="" selected="selected">请选择订单状态</option>
-							<option value="1">待发货</option>
-							<option value="2">待收货</option>
+							<option value="1">待接收</option>
+							<option value="2">进行中</option>
 							<option value="3">已完成</option>
 						</select>
 					</div>
@@ -104,9 +104,9 @@ table td {
 							<td>￥${item.orderPrice}</td>
 							<td>${item.orderDate}</td>
 							<td><c:if test="${item.orderState == 1}">
-									<span style="color: blue">待发货</span>
+									<span style="color: blue">待接收</span>
 								</c:if> <c:if test="${item.orderState == 2}">
-									<span style="color: red">待收货</span>
+									<span style="color: red">进行中</span>
 								</c:if> <c:if test="${item.orderState == 3}">
 									<span style="color: orange">已完成</span>
 								</c:if></td>
