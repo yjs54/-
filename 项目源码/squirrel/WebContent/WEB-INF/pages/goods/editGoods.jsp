@@ -9,7 +9,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>修改商品</title>
+    <title>编辑任务</title>
     <link rel="icon" href="<%=basePath%>img/logo.jpg" type="image/x-icon"/>
     <link rel="stylesheet" href="<%=basePath%>css/font-awesome.min.css" />
     <link rel="stylesheet" href="<%=basePath%>css/userhome.css" />
@@ -33,6 +33,9 @@
         <div id="home_header">
             <a href="<%=basePath%>goods/homeGoods">
                 <h1 class="logo"></h1>
+            </a>
+             <a href="<%=basePath%>goods/homeGoods">
+                 <img src="<%=basePath%>img/headbanner.png"  style="margin-left: 20px;" >
             </a>
             <a href="/user/home">
                 <div class="home"></div>
@@ -65,7 +68,7 @@
                     <a href="<%=basePath%>orders/myOrders">
                         <li class="notice">
                             <div></div>
-                            <span>订单中心</span>
+                            <span>任务中心</span>
                             <strong></strong>
                         </li>
                     </a>
@@ -79,14 +82,14 @@
                     <a href="<%=basePath%>goods/publishGoods">
                         <li class="store">
                             <div></div>
-                            <span>发布物品</span>
+                            <span>发布任务</span>
                             <strong></strong>
                         </li>
                     </a>
                     <a href="<%=basePath%>user/allGoods">
                         <li class="second">
                             <div></div>
-                            <span>我的闲置</span>
+                            <span>未接任务</span>
                             <strong></strong>
                         </li>
                     </a>
@@ -107,32 +110,32 @@
         <div id="user_content">
             <div class="basic">
                 <form:form action="../../goods/editGoodsSubmit" method="post" role="form" enctype="multipart/form-data">
-                    <h1 style="margin-left: 210px;">修改物品信息</h1><hr />
+                    <h1 style="margin-left: 210px;">编辑任务信息</h1><hr />
                     <div class="changeinfo">
-                        <span>物品名：</span>
+                        <span>任务名：</span>
                         <input class="in_info" type="text" name="name" placeholder="请输入物品名" value="${goodsExtend.goods.name}"/>
                         <span>(*必填)</span>
                     </div>
                     <div class="changeinfo">
-                        <span>出售价格：</span>
+                        <span>报酬：</span>
                         <input class="in_info" type="text" name="price" placeholder="请输入出售价格" value="${goodsExtend.goods.price}"/>
                        <span>(*必填)</span>
                    </div>
-                   <div class="changeinfo">
+        <%--            <div class="changeinfo">
                         <span>原价：</span>
                         <input class="in_info" type="text" name="realPrice" placeholder="请输入商品原价" value="${goodsExtend.goods.realPrice}"/>
                         <span id="checkphone">(*选填,请如实填写)</span>
-                     </div>
+                     </div> --%>
                      <div class="changeinfo">
-                        <span>物品类别：</span>
+                        <span>任务类别：</span>
                         <select class="in_info" name="catelogId">
-                            <option value="1">闲置数码</option>
+                            <option value="1">问题求助</option>
                             <option value="2">校园代步</option>
-                            <option value="3">电器日用</option>
-                            <option value="4">图书教材</option>
-                            <option value="5">美妆衣物</option>
+                            <option value="3">票券收购</option>
+                            <option value="4">专业帮助</option>
+                 <%--          <option value="5">美妆衣物</option>
                             <option value="6">运动棋牌</option>
-                            <option value="7">票券小物</option>
+                            <option value="7">票券小物</option>  --%> 
                         </select>
                     </div>
                     <div class="changeinfo" id="dir">
@@ -165,7 +168,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> 
                     </div>
                     <input type="submit" class="setting-save" value="提交修改" style="margin-top: 20px;background-color: blue;"/>
                 </form:form>
