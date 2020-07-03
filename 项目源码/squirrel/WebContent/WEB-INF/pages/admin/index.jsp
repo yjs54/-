@@ -37,7 +37,7 @@
 					</a></li>
 					<li class="bg_lg span3"><a
 						href="<%=basePath%>admin/goodsList?pageNum=1"> <i
-							class="icon-signal"></i>商品管理
+							class="icon-signal"></i>任务管理
 					</a></li>
 					<li class="bg_lo"><a
 						href="<%=basePath%>admin/ordersList?pageNum=1"> <i
