@@ -89,7 +89,6 @@ table td {
 						<th><input type="checkbox" id="selectAllButton"></th>
 						<th>订单编号</th>
 						<th>订单信息</th>
-						<th>订单价格</th>
 						<th>创建时间</th>
 						<th>订单状态</th>
 						<th>操作</th>
@@ -101,7 +100,6 @@ table td {
 							<td><input type="checkbox" name="itemIds" value="${item.id}"></td>
 							<td>${item.orderNum}</td>
 							<td>${item.orderInformation}</td>
-							<td>￥${item.orderPrice}</td>
 							<td>${item.orderDate}</td>
 							<td><c:if test="${item.orderState == 1}">
 									<span style="color: blue">待接收</span>
