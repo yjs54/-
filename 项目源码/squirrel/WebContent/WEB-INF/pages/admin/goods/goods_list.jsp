@@ -72,8 +72,8 @@ table td{
 					<span >状态：</span>
 					<select name="status" id="myselected" >
 					<option value="" selected="selected">选择商品状态</option>
-					<option value="1">在售</option>
-					<option value="0">下架</option>
+					<option value="1">未接受</option>
+					<option value="0">已取消</option>
 					</select>
 				</div>
 					<div class="col-sm-4">
@@ -130,10 +130,10 @@ table td{
 							<td>${item.startTime}</td>
 							<td>
 							<c:if test="${item.status == 1}">
-							<span style="color:blue">在售</span>
+							<span style="color:blue">未接受</span>
 							</c:if>
 							<c:if test="${item.status == 0}">
-							<span style="color:red">下架</span>
+							<span style="color:red">已取消</span>
 							</c:if>
 							</td>
 							<td>
@@ -223,8 +223,8 @@ table td{
 					 <label class="col-sm-4 control-label" >状态:</label>
 					<div class="col-sm-8">
 						<select name="status" style="margin-top: 8px;width: 372px;height: 27px;">
-						<option value="0" selected="selected">下架</option>
-						<option value="1">上架</option>
+						<option value="0" selected="selected">已取消</option>
+						<option value="1">未接受</option>
 						</select>
 					</div>
 				</div>
